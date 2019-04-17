@@ -42,6 +42,7 @@ class WorkLog(Log):
         """
         i = 0
 
+        # show msg if cannot find any result
         if len(ids) == 0:
             menu.clear_screen()
             menu.show_cannot_find()
@@ -101,7 +102,7 @@ class WorkLog(Log):
                 print("\n")
                 ids = self.find_by_regex(regex)
 
-            elif search_option == "e":
+            elif search_option == "e": # return to main menu
                 menu.clear_screen()
                 break
 
@@ -125,13 +126,13 @@ class WorkLog(Log):
             menu.clear_screen()
             main_menu = menu.get_main_menu_option().lower()
 
-            if main_menu == 'a':
+            if main_menu == 'a': # add new entry
                 self.entry_menu()
 
-            elif main_menu == "b":
+            elif main_menu == "b": # search menu
                 self.search_menu()
 
-            elif main_menu == "c":
+            elif main_menu == "c": # quit
                 menu.show_quit_msg()
                 self.to_csv()
                 break
