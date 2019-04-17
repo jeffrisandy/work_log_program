@@ -8,12 +8,15 @@ In order to prepare better timesheets for your company, you've been asked to dev
 Provide a way for a user to find all of the tasks that were done on a certain date or that match a search string (either as a regular expression or a plain text search). Print a report of this information to the screen, including the date, title of task, time spent, and general notes.
 
 This is the screenshot of main menu
+
 <img src="src/main_menu.png">
 
 This program is also able to search within the work log database
+
 <img src="src/seach_menu.png">
 
 Example of log data display
+
 <img src="src/log_data.png">
 
 
